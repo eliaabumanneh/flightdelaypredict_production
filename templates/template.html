@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+
+  <title> Flight Delay Predict</title>
+
+</head>
+
+<body> style="background: #000"
+  <div class="login">
+    <h1 style="color:rgb(218, 238, 130)">Flight Delay Prediction</h1>
+
+    <!-- Action where the data is being sent-->
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="airport index" placeholder = "Airport Index" required="required" /><br>
+        <input type="text" name="airline index" placeholder = "Airline Index" required="required" /><p>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Flight Delay</button></p>
+    </form>
+   <br>
+   <br>
+   <h4 style="color:Violet;">
+    {{ prediction_text }}</h4>
+   <h4 style="color:Violet;">
+      {{ cancellation_text }}</h4>
+  </div>
+</body>
+
+</html>

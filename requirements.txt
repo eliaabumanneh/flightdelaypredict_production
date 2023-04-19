@@ -1,0 +1,10 @@
+protobuf==3.19.0
+pandas
+numpy
+scikit-learn
+tensorflow
+keras
+matplotlib
+pillow
+gunicorn
+flask
